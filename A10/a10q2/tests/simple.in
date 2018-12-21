@@ -1,0 +1,10 @@
+add 10
+top
+add 5
+top
+add 1
+print
+remove
+print
+sort 3 2 5 -1
+exit

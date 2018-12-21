@@ -1,0 +1,11 @@
+print
+move
+right
+print
+right
+speed 2  
+print
+left left left
+move
+print
+quit

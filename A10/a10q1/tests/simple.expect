@@ -1,0 +1,15 @@
+FR: one => un
+FR: five => cinq
+KL: success => qapla'
+KL: failure => NOT_IN_DICTIONARY
+===== DICTIONARY: FR [6]
+five => cinq
+four => quatre
+hello => salut
+one => un
+three => trois
+two => deux
+===== DICTIONARY: TXT [3]
+lol => laugh_out_loud
+rtp => read_the_preamble
+smh => shake_my_head

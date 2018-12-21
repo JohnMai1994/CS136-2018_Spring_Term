@@ -1,0 +1,10 @@
+In case you're curious, it does not matter
+what is in this simple.in file, because your
+program will not read from input.
+
+But the [I/O TEST] button requires that a
+simple.in file exists to test your simple.expect file.
+
+For this question we're only concerned that
+your code produces the output contained in
+simple.expect *exactly*.

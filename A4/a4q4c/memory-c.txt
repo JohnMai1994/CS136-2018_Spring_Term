@@ -1,0 +1,30 @@
+q4.c after the variable "elijah_baley" is mutated for the third time
+
+****************************************
+GLOBAL MEMORY
+  eligah_baley: 2
+****************************************
+READ-ONLY MEMORY
+  first_speaker: 8
+****************************************
+STACK
+===================================
+hari_seldon:
+  b: 1
+  acc: 4
+  elijah_baley: 5
+  y: 1
+  return adress: hari_seldon 27
+===================================
+hari_seldon:
+  b: 3
+  acc: 2
+  elijah_baley: 4
+  y: 2
+  return adress: main 48
+===================================
+main:
+  z: 4
+  x: ???
+  return address: OS
+===================================

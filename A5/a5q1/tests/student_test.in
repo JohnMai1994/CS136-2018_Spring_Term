@@ -1,0 +1,25 @@
+print
+right
+speed 3
+move
+print
+right 
+move
+speed 5
+print
+right 
+left
+left
+left
+speed 2
+move
+print
+right
+print
+right
+speed 2  
+print
+left left left
+move
+print
+quit

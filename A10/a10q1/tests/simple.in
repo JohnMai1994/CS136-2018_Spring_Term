@@ -1,0 +1,28 @@
+newdict FR
+add FR hello bonjour
+add FR hello salut
+add FR one un
+add FR two deux  
+add FR three trois
+add FR four quatre 
+add FR five cinq
+add FR goodbye au_revoir
+newdict KL
+add KL one wa'
+add KL two cha'  
+add KL three wej
+add KL four loS 
+add KL five vagh
+add KL success qapla'
+lookup FR one
+lookup FR five
+lookup KL success
+lookup KL failure
+freedict KL
+newdict TXT
+add TXT smh shake_my_head
+add TXT lol laugh_out_loud
+add TXT rtp read_the_preamble
+remove FR goodbye
+print
+exit

@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <assert.h>
+
+// star_row(width) prints out width *'s on a line
+// requires: width >= 0
+// effects:  produces output
+
+static void star_row(int width) {
+  assert(width >= 0);
+  for (int i = 0; i < width; ++i) {
+    printf("*");
+  }
+  printf("\n");
+}
+
+
+// space_row(n) prints n spaces (without a newline)
+// effects: produces output
+
+static void space_row(int n) {
+  for (int i = 0; i < n; ++i) {
+    printf(" ");
+  }  
+}
+
+
+// star_rectangle(height, width) prints out a rectangle of stars
+//   of dimension height x width
+// requires: height, width >= 0
+// effects:  produces output
+
+void star_rectangle(int height, int width) {
+  assert(height >= 0);
+  assert(width >= 0);
+  for (int h = 1; h <= height; ++h) {
+    star_row(width);
+  }
+}
+
+
+// star_triangle(height) prints out a triangle of stars the given height
+// requires: height >= 0
+// effects:  produces output
+
+void star_triangle(int height) {
+  assert(height >= 0);
+  for (int h = 1; h <= height; ++h) {
+    star_row(h);
+  }
+}
+
+
+// star_diamond(k) prints a diamond pattern 2 * k - 1 rows high
+// requires: k > 0
+// effects:  produces output
+
+void star_diamond(int k) {
+  assert(k > 0);
+  for (int i = 1; i <= k; ++i) {
+    space_row(k - i);
+    star_row(i * 2 - 1);
+  }
+  for (int i = k - 1; i >= 1; --i) {
+    space_row(k - i);
+    star_row(i * 2 - 1);
+  }  
+}
+
+
+// digit_row(start, len) prints a total len digits
+//   followed by a newline, starting with the digit "start"
+// effects: produces output
+
+static void digit_row(int start, int len) {
+  for (int i = 0; i < len; ++i) {
+    printf("%d", (start + i) % 10);
+  }
+  printf("\n");
+}
+
+
+// digit_rectangle(height, width) prints out a rectangle of digits
+//   of dimension height x width
+// requires: height, width >= 0
+// effects:  produces output
+
+void digit_rectangle(int height, int width) {
+  assert(height >= 0);
+  assert(width >= 0);
+  for (int h = 1; h <= height; ++h) {
+    digit_row(h, width);
+  }
+}
+
+
+// digit_triangle(height) prints out a triangle of digits the given height
+// requires: height >=0
+// effects:  produces output
+
+void digit_triangle(int height) {
+  assert(height >= 0);
+  for (int h = 1; h <= height; ++h) {
+    digit_row(h, h);
+  }  
+}

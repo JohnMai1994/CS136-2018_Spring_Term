@@ -1,0 +1,22 @@
+q4.c when line 16 in the function daneel_olivaw is reached for the second time
+
+****************************************
+GLOBAL MEMORY
+  eligah_baley: 2
+****************************************
+READ-ONLY MEMORY
+  first_speaker: 8
+****************************************
+STACK
+===================================
+daneel_olivaw:
+  d: -2
+  e: 2
+  f: 2
+  return address: main 46
+===================================
+main: 
+  z: ???
+  x: ???
+  return address: OS
+===================================
